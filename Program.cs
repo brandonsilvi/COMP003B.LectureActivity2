@@ -31,8 +31,6 @@ namespace COMP003B.LectureActivity2
 
             app.UseWelcomePage("/welcome");
 
-            app.UseMiddleware<RequestLoggingMiddleware>();
-
             app.UseRouting();
 
             app.UseAuthorization();
