@@ -1,0 +1,20 @@
+@model TModel
+
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+
+<h2>@ViewData["Title"]</h2>
+<p>This page introduces me to the world of ASP.NET Core</p>
+@await Html.PartialAsync("_Sidebar")
+</body>
+</html>
